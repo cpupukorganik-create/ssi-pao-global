@@ -1,0 +1,160 @@
+This is a modern, high-conversion landing page built with HTML5 and CSS3 (utilizing Tailwind CSS for a sleek, professional aesthetic). It is designed to look like a high-end SaaS platform.
+
+### The Landing Page Code
+
+Save the following code as `index.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeriTrust | AI Content Provenance & Verification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #030712; color: #f9fafb; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-glow { position: absolute; top: -10%; left: 50%; transform: translateX(-50%); width: 80%; height: 500px; background: radial-gradient(circle, rgba(96, 165, 250, 0.15) 0%, rgba(3, 7, 18, 0) 70%); z-index: -1; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold tracking-tighter">VERI<span class="text-blue-500">TRUST</span></div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+            <a href="#features" class="hover:text-white transition">Features</a>
+            <a href="#solutions" class="hover:text-white transition">Solutions</a>
+            <a href="#blockchain" class="hover:text-white transition">IP Protection</a>
+        </div>
+        <a href="https://impact.com/your-link" class="px-5 py-2 bg-blue-600 hover:bg-blue-500 rounded-full text-sm font-semibold transition">Get Started</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-20 pb-32 px-4">
+        <div class="hero-glow"></div>
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="px-4 py-1 rounded-full border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-widest">The Gold Standard in Content Truth</span>
+            <h1 class="mt-8 text-5xl md:text-7xl font-bold tracking-tight leading-tight">
+                Secure Your Truth with <span class="gradient-text">AI Provenance</span>
+            </h1>
+            <p class="mt-6 text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                Protect your brand from misinformation using enterprise-grade <strong>C2PA metadata tools</strong> and advanced <strong>deepfake detection services</strong>.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://impact.com/your-link" class="px-8 py-4 bg-white text-black font-bold rounded-lg hover:bg-gray-200 transition text-center">Verify My Content</a>
+                <a href="#features" class="px-8 py-4 glass font-bold rounded-lg hover:bg-white/10 transition text-center">Explore Technology</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Grid -->
+    <section id="features" class="py-24 px-8 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Tool 1 -->
+            <div class="glass p-8 rounded-2xl">
+                <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">C2PA Metadata Tools</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Inject immutable manifest data into your assets. Our tools ensure every pixel’s history is traceable and tamper-proof from creation to distribution.</p>
+            </div>
+
+            <!-- Tool 2 -->
+            <div class="glass p-8 rounded-2xl">
+                <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Deepfake Detection</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Real-time analysis of synthetic media. Our AI models scan for algorithmic inconsistencies and forensic artifacts to isolate manipulated content.</p>
+            </div>
+
+            <!-- Tool 3 -->
+            <div class="glass p-8 rounded-2xl">
+                <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Blockchain IP Protection</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Anchor your intellectual property to the ledger. We provide decentralized proof-of-existence to prevent copyright infringement in the age of generative AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Section -->
+    <section class="py-20 bg-white/5">
+        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-6">Digital Content Watermarking & Verification</h2>
+                <p class="text-gray-400 mb-8 leading-relaxed">
+                    Invisible to the human eye, but permanent to the machine. Our <strong>digital content watermarking</strong> survives compression, cropping, and re-encoding. 
+                    <br><br>
+                    Combine this with our <strong>human-verified certification</strong> layer, where expert forensic analysts validate high-stakes media, ensuring 100% confidence for newsrooms and legal teams.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center space-x-3">
+                        <span class="text-blue-500">✓</span>
+                        <span>Multi-layered forensic analysis</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <span class="text-blue-500">✓</span>
+                        <span>Instant API verification for platforms</span>
+                    </li>
+                </ul>
+                <div class="mt-10">
+                    <a href="https://impact.com/your-link" class="text-blue-400 font-semibold hover:text-blue-300 transition underline decoration-2 underline-offset-8">Discover our Impact on Digital Trust →</a>
+                </div>
+            </div>
+            <div class="glass aspect-video rounded-3xl flex items-center justify-center overflow-hidden border-blue-500/20 shadow-2xl shadow-blue-500/10">
+                <div class="text-center p-8">
+                    <div class="inline-block animate-pulse mb-4 px-3 py-1 bg-green-500/20 text-green-400 text-xs rounded-full">System Active: Scanning Assets...</div>
+                    <div class="font-mono text-sm text-blue-400">0x71C9... Verified on Chain</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-32 px-8 text-center">
+        <div class="max-w-3xl mx-auto glass p-12 rounded-3xl border-white/10">
+            <h2 class="text-3xl font-bold mb-4">Ready to certify your content?</h2>
+            <p class="text-gray-400 mb-10">Join 500+ creators and organizations using VeriTrust to reclaim digital authenticity.</p>
+            <a href="https://impact.com/your-link" class="px-10 py-5 bg-blue-600 hover:bg-blue-500 rounded-xl text-lg font-bold transition">Start Your Verification Trial</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:row justify-between items-center text-gray-500 text-sm">
+            <p>© 2023 VeriTrust Systems. All Rights Reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white transition">C2PA Standards</a>
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="https://impact.com/your-link" class="hover:text-white transition">Partner with Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
+### Key Highlights of this Landing Page:
+
+1.  **Strategic Keyword Placement:**
+    *   **C2PA metadata tools:** Featured prominently in the features grid and sub-headline.
+    *   **Deepfake detection services:** Identified as a core technological pillar.
+    *   **Digital content watermarking:** Integrated into the middle descriptive section to explain technical depth.
+    *   **Human-verified certification:** Positioned as the "premium" trust layer for the service.
+    *   **Blockchain IP Protection:** Presented as the ultimate security measure for content ownership.
+2.  **Natural Link Integration:**
+    *   The link `https://impact.com/your-link` is used as the primary Call-to-Action (CTA) in the navigation, hero, and footer. It is also integrated textually ("Discover our Impact on Digital Trust") to appear as part of the brand's narrative.
+3.  **Modern UI/UX:**
+    *   **Glassmorphism:** Uses semi-transparent blurred backgrounds (`glass` class) for a high-tech feel.
+    *   **Dark Mode:** A deep navy/black palette conveys authority and security.
+    *   **Responsive:** The page uses Tailwind's utility classes to ensure it looks perfect on mobile, tablet, and desktop.
+    *   **Visual Hierarchy:** Large bold typography leads the eye toward the primary conversion points.

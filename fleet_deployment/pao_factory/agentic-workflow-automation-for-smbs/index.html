@@ -1,0 +1,186 @@
+This is a modern, responsive single-page landing page built with HTML5 and Tailwind CSS. It features a clean, high-tech aesthetic suitable for an AI-driven B2B service.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgenticFlow | Autonomous AI Agents for SMBs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #1e3a8a, #0f172a);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+            AgenticFlow
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="#features" class="hover:text-blue-400 transition">Features</a>
+            <a href="#solutions" class="hover:text-blue-400 transition">Solutions</a>
+            <a href="https://impact.com/your-link" class="hover:text-blue-400 transition">Our Impact</a>
+        </div>
+        <a href="https://impact.com/your-link" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2 rounded-full text-sm font-semibold transition">
+            Book a Demo
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative hero-gradient pt-20 pb-32 px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Empower Your Business with <br>
+                <span class="text-blue-400">Autonomous AI Agents</span>
+            </h1>
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+                Unlock enterprise-grade efficiency with specialized B2B workflow automation designed specifically for the modern small business.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contact" class="px-8 py-4 bg-white text-slate-900 rounded-lg font-bold hover:bg-blue-50 transition">
+                    Get Started
+                </a>
+                <a href="https://impact.com/your-link" class="px-8 py-4 glass-card rounded-lg font-bold hover:bg-white/10 transition border border-white/20">
+                    See the Impact
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">The Next Frontier of SMB Productivity</h2>
+            <p class="text-slate-400">Scale your operations without increasing your headcount.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="p-8 glass-card rounded-2xl">
+                <div class="w-12 h-12 bg-blue-500/20 flex items-center justify-center rounded-lg mb-6">
+                    <i class="fas fa-robot text-blue-400 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Autonomous AI Agents</h3>
+                <p class="text-slate-400 leading-relaxed">
+                    Deploy digital workers that think, learn, and execute complex tasks across your existing software stack independently.
+                </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="p-8 glass-card rounded-2xl">
+                <div class="w-12 h-12 bg-emerald-500/20 flex items-center justify-center rounded-lg mb-6">
+                    <i class="fas fa-network-wired text-emerald-400 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Specialized B2B Workflow Automation</h3>
+                <p class="text-slate-400 leading-relaxed">
+                    Custom-built triggers and actions optimized for B2B cycles, from lead enrichment to automated invoicing.
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="p-8 glass-card rounded-2xl">
+                <div class="w-12 h-12 bg-purple-500/20 flex items-center justify-center rounded-lg mb-6">
+                    <i class="fas fa-brain text-purple-400 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Custom LLM Integration for Small Business</h3>
+                <p class="text-slate-400 leading-relaxed">
+                    We fine-tune Large Language Models on your proprietary data to ensure your AI understands your brand voice and industry.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-8">
+        <div class="max-w-5xl mx-auto bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl p-12 text-center shadow-2xl">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Ready to automate your future?</h2>
+            <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+                Discover how our custom LLM integration for small business can transform your daily operations and drive measurable ROI.
+            </p>
+            <a href="https://impact.com/your-link" class="inline-block bg-slate-900 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-slate-800 transition shadow-lg">
+                Explore Our Solution
+            </a>
+        </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section id="solutions" class="py-24 px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold mb-6">Why SMBs Choose AgenticFlow</h2>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <i class="fas fa-check-circle text-blue-500 text-xl mt-1"></i>
+                        <div>
+                            <span class="font-bold block text-white">Rapid Deployment</span>
+                            <span class="text-slate-400">Our specialized B2B workflow automation templates mean you go live in days, not months.</span>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <i class="fas fa-check-circle text-blue-500 text-xl mt-1"></i>
+                        <div>
+                            <span class="font-bold block text-white">Secure Intelligence</span>
+                            <span class="text-slate-400">Enterprise-grade security for every custom LLM integration, ensuring your business data stays yours.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                <div class="h-40 glass-card rounded-xl flex items-center justify-center border-blue-500/30 border">
+                    <span class="text-blue-400 font-bold">CRM Sync</span>
+                </div>
+                <div class="h-40 glass-card rounded-xl flex items-center justify-center mt-8">
+                    <span class="text-emerald-400 font-bold">Auto-Prospecting</span>
+                </div>
+                <div class="h-40 glass-card rounded-xl flex items-center justify-center">
+                    <span class="text-purple-400 font-bold">24/7 Support AI</span>
+                </div>
+                <div class="h-40 glass-card rounded-xl flex items-center justify-center mt-8 border-blue-500/30 border">
+                    <span class="text-orange-400 font-bold">Smart Analysis</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 py-12 px-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>
+                <div class="text-xl font-bold text-white mb-2">AgenticFlow</div>
+                <p class="text-slate-500 text-sm italic">Bridging the gap with autonomous AI agents.</p>
+            </div>
+            <div class="flex space-x-6 text-slate-400 text-sm">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+                <a href="https://impact.com/your-link" class="hover:text-white">Partner Program</a>
+            </div>
+            <div class="text-slate-500 text-sm">
+                &copy; 2023 AgenticFlow Automation. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
+### Key Elements Included:
+*   **Hero Section:** High-impact headline focusing on **autonomous AI agents**.
+*   **Keyword Integration:** Naturally woven phrases like **specialized B2B workflow automation** and **custom LLM integration for small business** throughout the copy.
+*   **Call to Action (CTA):** Strategically placed links using `https://impact.com/your-link`.
+*   **Modern Tech Stack:** Uses Tailwind CSS for a professional, dark-themed "SaaS" look that appeals to tech-forward SMB owners.
+*   **Responsive Design:** Fully functional on mobile, tablet, and desktop.
+*   **Clean Icons:** Uses FontAwesome for visual cues related to AI and automation.

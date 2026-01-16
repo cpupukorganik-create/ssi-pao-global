@@ -1,0 +1,17 @@
+# ==========================================
+# 💎 P.A.O. SYSTEM: MASTER REVENUE CONFIG 💎
+# ==========================================
+
+# 1. PELURU CPM (ADSTERRA / ALTERNATIF)
+CPM_AD_CODE = """
+"""
+
+# 2. STATUS SMART SWITCH
+SMART_SWITCH_ACTIVE = True
+
+# 3. TARGET PRODUKSI & OPERASIONAL
+DAILY_BATCH_TARGET = 200
+PROTOCOL_VERSION = "Diamond-V3-Hybrid-Managerial"
+
+# 4. SETTING ANALISIS MANAJERIAL
+ENABLE_STRATEGIC_NICHE_ANALYSIS = True

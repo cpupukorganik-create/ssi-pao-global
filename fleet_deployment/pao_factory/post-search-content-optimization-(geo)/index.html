@@ -1,0 +1,142 @@
+This is a modern, high-conversion landing page designed for a GEO (Generative Engine Optimization) agency or tool. It uses a sleek "Dark Mode" tech aesthetic, responsive Tailwind CSS, and integrates your keywords and link naturally.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEO Mastery | Generative Engine Optimization Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .glow-effect { box-shadow: 0 0 20px rgba(99, 102, 241, 0.4); }
+        .gradient-text {
+            background: linear-gradient(90deg, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter">GEO<span class="text-indigo-500">FLOW</span></div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="#about" class="hover:text-indigo-400 transition">Strategy</a>
+            <a href="#services" class="hover:text-indigo-400 transition">Solutions</a>
+            <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+        </div>
+        <a href="https://impact.com/your-link" class="bg-indigo-600 hover:bg-indigo-700 px-5 py-2 rounded-full text-sm font-semibold transition">Get Started</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container mx-auto px-6 pt-16 pb-24 text-center">
+        <span class="px-4 py-1.5 rounded-full border border-indigo-500/30 text-indigo-400 text-xs font-bold uppercase tracking-widest">The Future of Search is Here</span>
+        <h1 class="mt-8 text-5xl md:text-7xl font-extrabold leading-tight">
+            Master <span class="gradient-text">Generative Engine Optimization</span>
+        </h1>
+        <p class="mt-6 text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
+            Traditional SEO is no longer enough. We position your brand at the center of AI-driven responses, ensuring high-authority <strong>LLM brand mentions</strong> across the web's most powerful models.
+        </p>
+        <div class="mt-10 flex flex-col md:flex-row justify-center gap-4">
+            <a href="https://impact.com/your-link" class="glow-effect bg-indigo-600 hover:bg-indigo-700 px-8 py-4 rounded-xl font-bold text-lg transition duration-300">Boost Your AI Ranking</a>
+            <a href="#about" class="bg-slate-800 hover:bg-slate-700 px-8 py-4 rounded-xl font-bold text-lg transition duration-300">Learn the Strategy</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="about" class="bg-slate-900/50 py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold">Dominate the Post-Search Era</h2>
+                <p class="text-gray-400 mt-4">Where users ask, and AI answers—make sure your brand is the answer.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Feature 1 -->
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500/50 transition">
+                    <div class="w-12 h-12 bg-indigo-500/10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AI Answer Engine Ranking</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        We optimize your data structures and content architecture to secure top placement in AI-generated summaries and conversational responses.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500/50 transition">
+                    <div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04kM12 21.75c-3.128-1.464-5.382-4.526-5.382-7.993V9.5h10.764v4.257c0 3.467-2.254 6.529-5.382 7.993z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">LLM Brand Mentions</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Ensure your brand is cited as a trusted source by Large Language Models. We improve your digital footprint to increase organic LLM citations.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500/50 transition">
+                    <div class="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Post-Search Intelligence</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Move beyond keywords. Our <strong>Generative Engine Optimization</strong> framework focuses on intent, context, and the semantic relationships AI values most.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content / CTA Section -->
+    <section class="container mx-auto px-6 py-24 text-center">
+        <div class="max-w-4xl mx-auto bg-gradient-to-br from-indigo-900/40 to-slate-800 p-12 rounded-3xl border border-slate-700">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to lead the AI Search Revolution?</h2>
+            <p class="text-lg text-gray-300 mb-10">
+                Stop waiting for clicks and start becoming the definitive answer. Our specialized <strong>AI answer engine ranking</strong> protocols are designed for the next decade of digital growth.
+            </p>
+            <a href="https://impact.com/your-link" class="inline-block bg-white text-slate-900 px-10 py-4 rounded-xl font-bold text-lg hover:bg-indigo-50 transition duration-300">
+                Unlock Your GEO Score
+            </a>
+            <p class="mt-6 text-sm text-gray-500 italic">
+                Strategic LLM Brand Mentions & Generative Engine Optimization.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-12">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-xl font-bold mb-4 md:mb-0">GEO<span class="text-indigo-500">FLOW</span></div>
+            <div class="text-gray-500 text-sm">
+                &copy; 2023 GEOFlow. All rights reserved. <a href="https://impact.com/your-link" class="underline">Privacy Policy</a>
+            </div>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="text-gray-400 hover:text-white transition">Twitter</a>
+                <a href="#" class="text-gray-400 hover:text-white transition">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
+### Key Highlights of this Landing Page:
+
+1.  **Direct Keyword Integration:**
+    *   **Generative Engine Optimization (GEO):** Used in the H1 tag and descriptions to ensure SEO relevance for the niche.
+    *   **AI Answer Engine Ranking:** Featured as a primary service pillar to capture users looking for Perplexity/SearchGPT optimization.
+    *   **LLM Brand Mentions:** Targeted as a high-value feature, appealing to brands that want to be cited by ChatGPT or Claude.
+2.  **Conversion Optimization:**
+    *   The primary Call-to-Action (CTA) uses your specific link: `https://impact.com/your-link`.
+    *   The "Glow-effect" button and "Gradient-text" draw the eye to the most important parts of the page.
+3.  **Modern Stack:**
+    *   Built with **Tailwind CSS**, making it fully responsive and extremely fast to load.
+    *   Uses **Google Fonts (Inter)** for a high-end, SaaS-style look.
+4.  **Strategic Content:**
+    *   The copy shifts from "Traditional SEO" to "Post-Search Content Optimization," positioning the brand as a forward-thinking leader in a new industry.

@@ -1,0 +1,30 @@
+{
+    "AI_TOOLS": {
+        "merchant_name": "SaaS AI Recurring",
+        "base_url": "https://merchant.fastai.io/join?ref=",
+        "your_id": "sodaraku_pao_ai",
+        "current_batch": "BATCH_01",
+        "status": "ACTIVE"
+    },
+    "CAREER_PIVOT": {
+        "merchant_name": "Professional Certifications",
+        "base_url": "https://skilljump.edu/aff/id=",
+        "your_id": "sodaraku_pao_career",
+        "current_batch": "BATCH_01",
+        "status": "ACTIVE"
+    },
+    "DIGITAL_MARKETING": {
+        "merchant_name": "Online Business Tools",
+        "base_url": "https://alphatools.io/ref/",
+        "your_id": "sodaraku_pao_marketing",
+        "current_batch": "BATCH_01",
+        "status": "ACTIVE"
+    },
+    "CLOUD_SECURITY": {
+        "merchant_name": "CloudGuard Pro",
+        "base_url": "https://secure.cloudguard.io/aff?id=",
+        "your_id": "sodaraku_pao_secure",
+        "current_batch": "BATCH_01",
+        "status": "ACTIVE"
+    }
+}

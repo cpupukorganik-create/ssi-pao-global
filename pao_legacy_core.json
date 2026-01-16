@@ -1,0 +1,16 @@
+{
+    "monetization": {
+        "primary_affiliate": "https://impact.com/your-link",
+        "paypal_me": "https://paypal.me/your-paypal@email.com",
+        "global_cta": "Secure Your Digital Identity Now"
+    },
+    "legacy_instructions": {
+        "owner": "Sang Jenderal",
+        "purpose": "Pendidikan 5 Putra-Putri & Amal Jariyah",
+        "tithe_percent": 10
+    },
+    "redirect_rules": {
+        "/secure": "https://identity-tool-affiliate.com/ref=jenderal",
+        "/vault": "https://hardware-wallet-provider.com/ref=jenderal"
+    }
+}

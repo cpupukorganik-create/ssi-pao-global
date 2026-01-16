@@ -1,0 +1,168 @@
+This is a modern, responsive single-page HTML5 landing page designed specifically for the DePIN niche. It uses **Tailwind CSS** for a sleek, "web3" aesthetic with dark modes, neon accents, and clean typography.
+
+The keywords and your link have been integrated naturally throughout the copy and calls to action.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DePIN Nexus | Building the Decentralized Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #030712; color: #f9fafb; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .neon-glow { text-shadow: 0 0 10px rgba(96, 165, 250, 0.5); }
+        .gradient-bg { background: linear-gradient(135deg, #1e1b4b 0%, #030712 100%); }
+    </style>
+</head>
+<body class="gradient-bg">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter text-blue-400">DePIN<span class="text-white">NEXUS</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#about" class="hover:text-blue-400 transition">Infrastructure</a>
+                <a href="#features" class="hover:text-blue-400 transition">Networks</a>
+                <a href="#hardware" class="hover:text-blue-400 transition">Hardware</a>
+            </div>
+            <a href="https://impact.com/your-link" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2 rounded-full font-semibold transition shadow-lg shadow-blue-500/20">
+                Get Started
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                The World’s First <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Community-Owned Compute Power</span>
+            </h1>
+            <p class="text-gray-400 text-xl max-w-2xl mx-auto mb-10">
+                Join the revolution of <strong>decentralized wireless networks</strong> and <strong>blockchain energy grids</strong>. Own the infrastructure you use every day.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="https://impact.com/your-link" class="bg-blue-600 hover:bg-blue-500 text-white text-lg px-8 py-4 rounded-xl font-bold transition">
+                    Explore the Ecosystem
+                </a>
+                <a href="#hardware" class="glass hover:bg-white/10 text-white text-lg px-8 py-4 rounded-xl font-bold transition">
+                    View Hardware Incentives
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Pillars -->
+    <section id="features" class="py-20 bg-black/30">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-2xl">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 text-blue-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071a10 10 0 0114.142 0M1.393 8.536a16 16 0 0121.214 0" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Decentralized Wireless Networks</h3>
+                    <p class="text-gray-400">Eliminate the middleman. Provide 5G or LoRaWAN coverage to your neighborhood and earn tokens for every byte of data transferred.</p>
+                </div>
+
+                <div class="glass p-8 rounded-2xl border-t-2 border-emerald-500/50">
+                    <div class="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-6 text-emerald-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Blockchain Energy Grids</h3>
+                    <p class="text-gray-400">Peer-to-peer solar and renewable energy trading. Secure your local grid with transparent, smart-contract-based distribution.</p>
+                </div>
+
+                <div class="glass p-8 rounded-2xl">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6 text-purple-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Tokenized Physical Assets</h3>
+                    <p class="text-gray-400">Fractionalize ownership of real-world assets like sensors, data centers, and storage hubs using the power of DePIN.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Incentives Section -->
+    <section id="hardware" class="py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1000" alt="Hardware Server" class="rounded-3xl shadow-2xl border border-white/10">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold mb-6">DePIN Hardware Incentives</h2>
+                <p class="text-gray-300 mb-6 leading-relaxed">
+                    Deploying physical infrastructure shouldn't be a thankless job. Our ecosystem ensures that hardware providers are the primary beneficiaries of network growth. 
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center space-x-3 text-blue-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>Passive income through 24/7 node uptime.</span>
+                    </li>
+                    <li class="flex items-center space-x-3 text-blue-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>Verified Proof-of-Physical-Work (PoPW) protocols.</span>
+                    </li>
+                    <li class="flex items-center space-x-3 text-blue-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>Early adopter rewards for new network expansion.</span>
+                    </li>
+                </ul>
+                <div class="mt-10">
+                    <a href="https://impact.com/your-link" class="inline-block bg-white text-black px-8 py-3 rounded-lg font-bold hover:bg-blue-400 transition transform hover:scale-105">
+                        Setup Your Node Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6">
+        <div class="container mx-auto glass p-12 rounded-3xl text-center relative overflow-hidden">
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-blue-500/20 blur-[100px] rounded-full"></div>
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to decentralize the world?</h2>
+            <p class="text-gray-400 mb-8 max-w-xl mx-auto text-lg">
+                Join thousands of builders using <strong>Impact</strong> to scale their DePIN projects.
+            </p>
+            <a href="https://impact.com/your-link" class="bg-blue-600 hover:bg-blue-500 text-white px-10 py-5 rounded-full font-bold text-xl transition inline-block">
+                Get Started with Impact.com
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/10">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+            <p>© 2023 DePIN Nexus. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="https://impact.com/your-link" class="hover:text-blue-400">Privacy Policy</a>
+                <a href="https://impact.com/your-link" class="hover:text-blue-400">Terms of Service</a>
+                <a href="https://impact.com/your-link" class="hover:text-blue-400">Impact Link</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
+### Key Features of this Landing Page:
+1.  **Modern Aesthetics**: Uses a dark theme with glassmorphism and subtle neon gradients, common in the Web3 and Blockchain space.
+2.  **Keyword Optimization**:
+    *   **Hero**: Features "Community-owned compute power" and "Decentralized wireless networks."
+    *   **Features Grid**: Specifically addresses "Blockchain energy grids" and "Tokenized physical assets."
+    *   **Hardware Section**: Details the benefits of "DePIN hardware incentives."
+3.  **Responsive Design**: The layout automatically adjusts for mobile, tablet, and desktop screens using Tailwind's grid and flex systems.
+4.  **Natural Link Integration**: The `https://impact.com/your-link` URL is used in the main call-to-action buttons, the secondary body text, and the footer, ensuring high visibility without looking like spam.
+5.  **Performance**: It loads via CDN with no heavy assets, ensuring fast load times which is critical for conversion.

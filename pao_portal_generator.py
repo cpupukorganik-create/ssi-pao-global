@@ -1,0 +1,66 @@
+import os
+
+# --- KONFIGURASI ---
+SOURCE_DIR = "pao_factory" 
+OUTPUT_FILE = "index.html" 
+BASE_URL = "https://ssi-pao-global.pages.dev"
+
+def generate_portal():
+    print(f"🚀 Memulai Pemindaian Imperium di: {SOURCE_DIR}...")
+    
+    if not os.path.exists(SOURCE_DIR):
+        print(f"❌ Error: Folder '{SOURCE_DIR}' tidak ditemukan! Pastikan Anda berada di folder yang benar.")
+        return
+
+    try:
+        # Mengambil daftar folder unit
+        units = sorted([d for d in os.listdir(SOURCE_DIR) if os.path.isdir(os.path.join(SOURCE_DIR, d))])
+    except Exception as e:
+        print(f"❌ Gagal membaca folder: {e}")
+        return
+
+    total_units = len(units)
+    
+    html_content = f"""<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSI-PAO GLOBAL PORTAL</title>
+    <style>
+        body {{ font-family: 'Segoe UI', Tahoma, sans-serif; background: #0f172a; color: #f8fafc; margin: 0; padding: 20px; }}
+        .header {{ text-align: center; padding: 40px 0; border-bottom: 1px solid #1e293b; margin-bottom: 30px; }}
+        h1 {{ color: #38bdf8; letter-spacing: 2px; margin: 0; }}
+        .stats {{ color: #94a3b8; font-size: 0.9em; }}
+        .grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; max-width: 1200px; margin: auto; }}
+        .card {{ background: #1e293b; padding: 12px; border-radius: 8px; text-decoration: none; color: #38bdf8; 
+                 font-size: 11px; text-align: center; border: 1px solid transparent; transition: 0.2s; 
+                 white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }}
+        .card:hover {{ border-color: #38bdf8; background: #334155; transform: translateY(-2px); }}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>💎 SSI-PAO GLOBAL PORTAL</h1>
+        <p class="stats">Status: <span style="color: #4ade80;">Active Tier 3</span> | Total Gates: {total_units}</p>
+    </div>
+    <div class="grid">
+    """
+
+    for unit in units:
+        html_content += f'        <a href="./{SOURCE_DIR}/{unit}/index.html" class="card" title="{unit}">{unit}</a>\n'
+
+    html_content += """    </div>
+    <footer style="text-align: center; margin-top: 50px; color: #475569; font-size: 0.8em;">
+        &copy; 2026 SSI-PAO Global Imperium - Bismillah for Success
+    </footer>
+</body>
+</html>"""
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        f.write(html_content)
+
+    print(f"✅ Alhamdulillah! Portal dengan {total_units} gerbang berhasil dibuat di {OUTPUT_FILE}.")
+
+if __name__ == "__main__":
+    generate_portal()

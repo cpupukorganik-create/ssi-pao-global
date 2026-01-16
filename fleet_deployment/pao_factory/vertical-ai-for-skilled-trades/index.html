@@ -1,0 +1,178 @@
+This is a complete, single-file HTML5 landing page designed with a modern, professional aesthetic suitable for the "Vertical AI" space. It uses **Tailwind CSS** (via CDN) for styling to ensure it is responsive, clean, and fast-loading.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeFlow AI | Intelligence for Skilled Trades</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(90deg, #2563eb, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23cbd5e1' fill-opacity='0.2'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="text-slate-900 bg-white antialiased">
+
+    <!-- Navigation -->
+    <nav class="flex items-center justify-between px-6 py-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold tracking-tight text-blue-600">TRADE<span class="text-slate-800">FLOW</span> AI</div>
+        <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+            <a href="#features" class="hover:text-blue-600 transition">Solutions</a>
+            <a href="#about" class="hover:text-blue-600 transition">Technology</a>
+            <a href="https://impact.com/your-link" class="hover:text-blue-600 transition">Pricing</a>
+        </div>
+        <a href="https://impact.com/your-link" class="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-200">Get Started</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-pattern pt-16 pb-24 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-sm font-bold mb-6 uppercase tracking-wider">AI Revolution for the Trades</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                Stop Estimating. <br><span class="gradient-text">Start Growing.</span>
+            </h1>
+            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                The first all-in-one Vertical AI platform designed specifically for residential and commercial contractors. Increase billable hours and eliminate office bottlenecks.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="https://impact.com/your-link" class="bg-slate-900 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-slate-800 transition shadow-xl">Book a Demo</a>
+                <a href="#features" class="bg-white border border-slate-200 text-slate-700 px-8 py-4 rounded-xl text-lg font-bold hover:bg-slate-50 transition">Explore Features</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Features Grid -->
+    <section id="features" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Built for Your Specific Craft</h2>
+                <p class="text-slate-500">Industry-specific AI modules that understand the tools you use.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- HVAC -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl transition duration-300">
+                    <div class="w-12 h-12 bg-blue-600 rounded-lg mb-6 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">HVAC Pros</h3>
+                    <p class="text-slate-600 mb-4">Optimize your fleet with <strong>AI-driven HVAC dispatching</strong> that predicts traffic and job complexity in real-time.</p>
+                </div>
+
+                <!-- Plumbers -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl transition duration-300">
+                    <div class="w-12 h-12 bg-blue-600 rounded-lg mb-6 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Plumbing</h3>
+                    <p class="text-slate-600 mb-4">Close more leads with <strong>automated job estimation for plumbers</strong>. Upload photos of the site and get instant material lists.</p>
+                </div>
+
+                <!-- Electricians -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl transition duration-300">
+                    <div class="w-12 h-12 bg-blue-600 rounded-lg mb-6 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Electrical</h3>
+                    <p class="text-slate-600 mb-4">Manage high-stakes projects using our <strong>specialized CRM for electrical contractors</strong> with automated permit tracking.</p>
+                </div>
+
+                <!-- Field Software -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl transition duration-300">
+                    <div class="w-12 h-12 bg-blue-600 rounded-lg mb-6 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Field Software</h3>
+                    <p class="text-slate-600 mb-4">Get paid before you leave the driveway. Our <strong>voice-to-invoice field software</strong> turns speech into professional billing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Efficiency Section -->
+    <section class="py-20 px-6 bg-slate-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h2 class="text-4xl font-bold mb-6">Built by trade experts, <br>refined by AI.</h2>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-center space-x-3">
+                        <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
+                        <span>Reduce fuel costs by 22% with AI routing.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
+                        <span>Decrease office admin time by 15 hours/week.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
+                        <span>Seamless integration with existing toolsets.</span>
+                    </li>
+                </ul>
+                <div class="mt-10">
+                    <a href="https://impact.com/your-link" class="bg-blue-600 hover:bg-blue-500 px-8 py-3 rounded-lg font-bold transition">Learn More</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 md:pl-16 relative">
+                <div class="bg-blue-500/10 p-4 rounded-2xl border border-blue-500/20 backdrop-blur-sm">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800" alt="Trade Worker with Tablet" class="rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial/CTA -->
+    <section class="py-24 px-6 text-center max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 italic text-slate-700">"The voice-to-invoice field software literally changed my life. I haven't done paperwork on a Sunday in six months."</h2>
+        <div class="flex items-center justify-center space-x-4 mb-12">
+            <div class="text-left">
+                <p class="font-bold">Marcus Thorne</p>
+                <p class="text-sm text-slate-500">Thorne Electrical Services</p>
+            </div>
+        </div>
+        <div class="bg-blue-50 p-10 rounded-3xl border border-blue-100">
+            <h3 class="text-2xl font-bold mb-4">Ready to automate your trade?</h3>
+            <p class="text-slate-600 mb-8">Join over 2,500 contractors using TradeFlow AI to dominate their local market.</p>
+            <a href="https://impact.com/your-link" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-blue-700 transition shadow-xl">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-200 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <div class="text-xl font-bold text-blue-600 mb-2">TRADE<span class="text-slate-800">FLOW</span> AI</div>
+                <p class="text-sm text-slate-500">© 2023 Vertical AI Solutions Inc. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6 text-sm font-medium text-slate-600">
+                <a href="https://impact.com/your-link" class="hover:text-blue-600">Privacy Policy</a>
+                <a href="https://impact.com/your-link" class="hover:text-blue-600">Terms of Service</a>
+                <a href="https://impact.com/your-link" class="hover:text-blue-600">Contact Support</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
+### Key Features of this Design:
+1.  **Vertical AI Focus:** The copy highlights that this isn't just "general AI" but software built for the specific physics and workflows of the trades.
+2.  **Strategic Keyword Placement:** 
+    *   *AI-driven HVAC dispatching* is featured in the solutions grid.
+    *   *Automated job estimation for plumbers* is highlighted as a primary lead conversion tool.
+    *   *Specialized CRM for electrical contractors* focuses on permit tracking and high-stakes project management.
+    *   *Voice-to-invoice field software* is presented as the ultimate lifestyle benefit for contractors tired of paperwork.
+3.  **Visual Hierarchy:** Large, bold typography with high contrast (Blue/Slate/White) gives a professional "enterprise-grade" feel that contractors trust.
+4.  **Responsive Design:** Using Tailwind CSS ensures the site looks perfect on smartphones (the primary device for field techs) and desktops (for office dispatchers).
+5.  **Conversion Optimized:** The CTA link is integrated naturally into the Navigation, Hero, Pricing, and Footer areas.
